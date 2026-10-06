@@ -14,8 +14,6 @@
 
 ### 程式實作
 
-檔案：`ackermann.cpp`
-
 ```cpp
 #include <iostream>
 using namespace std;
