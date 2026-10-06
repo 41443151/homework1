@@ -18,7 +18,7 @@
 #include <iostream>
 using namespace std;
 
-// 遞迴：直接依照題目的三個規則計算。
+// 遞迴，直接依照題目的三個規則計算。
 int ackermann(int m, int n)
 {
     if (m == 0)
@@ -30,7 +30,7 @@ int ackermann(int m, int n)
     return ackermann(m - 1, temp);
 }
 
-// 自己用動態陣列加入資料，不使用 <stack>。
+// 用動態陣列加入資料。
 void push_stack(int*& s, int& top, int& capacity, int value)
 {
     if (top + 1 == capacity)
@@ -79,7 +79,7 @@ int ackermann_nonrecursive(int m, int n)
         else
         {
             n--;
-            // 外層先放，內層後放，所以內層先處理。
+            // 外層先放，內層後放，先處理內層。
             push_stack(s, top, capacity, m - 1);
             push_stack(s, top, capacity, m);
         }
