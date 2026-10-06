@@ -143,8 +143,6 @@ int main()
 
 ### 程式實作
 
-檔案：`powerset.cpp`
-
 ```cpp
 #include <iostream>
 #include <algorithm>
