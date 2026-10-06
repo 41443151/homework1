@@ -148,7 +148,6 @@ int main()
 #include <algorithm>
 using namespace std;
 
-// 依照投影片的介面，使用全域變數記錄集合大小與輸出狀態。
 int m;
 bool is_first_subset = true;
 
